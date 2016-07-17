@@ -2,7 +2,7 @@
  * entry c function of kernel
  */
 
-#include "types.h"
+#include "console.h"
 
 int kern_entry()
 {
