@@ -36,6 +36,7 @@ start:
 	mov ebp, 0 		 ; 
 	and esp, 0FFFFFFF0H	 ; 16 bytes alignment of stack address
 	mov [glb_mboot_ptr], ebx ; save ebx pointer to global var
+        extern kern_entry
 	call kern_entry		 ; call entry function
 stop:
 	hlt 			 ; halt instruction
