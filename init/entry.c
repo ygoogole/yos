@@ -14,7 +14,7 @@ int kern_entry()
 
     printk_color(rc_black, rc_green, "Hello, OS kernel!\n");
 
-    panic("test");
+    //panic("test");
 
 	printk("kernel in memory start: 0x%08X\n", kern_start);
 	printk("kernel in memory end:   0x%08X\n", kern_end);
